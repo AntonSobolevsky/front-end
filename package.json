@@ -1,0 +1,22 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server --files '**'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonSobolevsky/front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonSobolevsky/front-end/issues"
+  },
+  "homepage": "https://github.com/AntonSobolevsky/front-end#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7"
+  }
+}
