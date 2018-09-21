@@ -1,0 +1,81 @@
+Create new project:
+
+ng new <project-name> --style <css preprocessor> --routing
+
+Run project:
+
+ng serve --port <port>
+         --host <localhost>
+         --open open default browser
+         --hmr anable hot model replacment
+         --aot build using Ahead of Time compilation
+         --base-href base url for the application being built
+
+Lint project:
+
+ng lint --fix fixes linting errors (may overwrite linted files)
+        --type-check controls the type check for linting
+        --force succeeds even if there was linting errors
+        --silent show output text
+        --format output format (prose, json, stylish, verbose, pmd, msbuild, checkstyle, vso, fileslist, codeFrame)
+
+Unit test:
+
+ng test --prod flag to set configuration to "prod"
+        --environment defines the build environment
+        --progress log progress to the console while building
+        --watch run build when files change
+        --code-coverage output a code coverage report
+
+Generate files:
+  --dry-run(-d) run through without making any changes
+  --force(-f) forces overwriting of files
+
+* Class
+  ng g class <name> --spec specifies if a spec file is generated
+                    --type specifies the type of class
+
+* Component
+  ng g component <name> --inline-style(-s) specifies if the style will be in the ts file
+                        --inline-template(-t) specifies if the template will be in the ts file
+                        --view-encapsulation(-v) specifies the view encapsulation strategy (None, Emulated, Native)
+                        --change-detection(-c) specifies the change detection strategy (OnPush)
+                        --styleext the file extension to be used for style files
+                        --spec specifies if a spec file is generated
+                        --flat flag to indicate if a dir is created
+                        --module allows specification of the declaring module
+                        --export specifies if declaring module exports the component
+
+* Directive
+  ng g directive <name> --spec specifies if a spec file is generated
+                        --flat flag to indicate if a dir is created
+                        --module allows specification of the declaring module
+                        --export specifies if declaring module exports the component
+
+* Enum
+  ng g enum <name>
+
+* Guard
+  ng g guard <name> --spec specifies if a spec file is generated
+
+* Enum
+  ng g interface <name>
+
+* Module
+  ng g module <name> --routing generates a routing module
+                     --routing-scope the scope for the generated routing (Root, Child)
+                     --spec specifies if a spec file is generated
+                     --flat flag to indicate if a dir is created
+
+* Pipe
+  ng g pipe <name> --spec specifies if a spec file is generated
+                   --flat flag to indicate if a dir is created
+
+* Service
+  ng g service <name> --spec specifies if a spec file is generated
+                      --flat flag to indicate if a dir is created
+
+Build project:
+
+ng build --prod flag to set configuration to "prod"
+         --aot build using Ahead of Time compilation
